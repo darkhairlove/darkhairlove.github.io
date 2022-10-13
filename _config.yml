@@ -19,8 +19,8 @@ locale                   : "ko-KR"
 title                    : "AI Note"
 title_separator          : "|"
 subtitle                 : "study AI" # site tagline that appears below site title in masthead
-name                     : "SuJin_Park"
-description              : "An amazing website."
+name                     : "SuJinPark"
+description              : "AI website."
 url                      : "https://darkhairlove.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,8 +104,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "SuJin_Park_Note"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "SuJin_Park"
+  avatar           : "/assets/images/CHN.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "AI note"
   location         : "South Korea"
   email            :
