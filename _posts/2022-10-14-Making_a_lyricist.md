@@ -111,11 +111,11 @@ print("데이터 크기:", len(raw_corpus))
 print("Examples:\n", raw_corpus[:3])
 ```
 
-<pre>
+~~~
 데이터 크기: 187088
 Examples:
  ['Looking for some education', 'Made my way into the night', 'All that bullshit conversation']
-</pre>
+~~~
 
 ```python
 # 입력된 문장을
