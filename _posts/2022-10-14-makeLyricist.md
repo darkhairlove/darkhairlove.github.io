@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "makeLyricist_title2"
+title:  "작사가만들기"
 categories: AI
 tag: [python, aiffel, ai]
 toc: true
