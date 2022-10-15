@@ -355,7 +355,7 @@ generate_text(model, tokenizer, init_sentence="<start> l love", max_len=20)
 ```
 
 <code>
-'<start> l love amour , yeah <end>'
+<start> l love amour , yeah <end>
 </code>
 ## 회고
 
