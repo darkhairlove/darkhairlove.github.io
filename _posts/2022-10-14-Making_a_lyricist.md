@@ -85,9 +85,9 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-```
+<pre>
 Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
-```
+</pre>
 
 ```python
 import re
@@ -111,11 +111,11 @@ print("데이터 크기:", len(raw_corpus))
 print("Examples:\n", raw_corpus[:3])
 ```
 
-~~~
+<pre>
 데이터 크기: 187088
 Examples:
  ['Looking for some education', 'Made my way into the night', 'All that bullshit conversation']
-~~~
+</pre>
 
 ```python
 # 입력된 문장을
@@ -367,7 +367,7 @@ generate_text(model, tokenizer, init_sentence="<start> l love", max_len=20)
 ```
 
 <pre>
-'<start> l love amour , yeah <end> '
+'l love amour , yeah'
 </pre>
 ## 회고
 
