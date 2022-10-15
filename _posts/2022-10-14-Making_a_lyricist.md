@@ -153,18 +153,6 @@ for sentence in raw_corpus:
 corpus[:10]
 ```
 
-<pre>
-['<start> looking for some education <end>',
- '<start> made my way into the night <end>',
- '<start> all that bullshit conversation <end>',
- '<start> i don t even wanna waste your time <end>',
- '<start> let s just say that maybe <end>',
- '<start> you could help me ease my mind <end>',
- '<start> if that s love in your eyes <end>',
- '<start> it s more than enough <end>',
- '<start> had some bad love <end>',
- '<start> ooh , ooh looking for some affirmation <end>']
-</pre>
 
 ```python
 def tokenize(corpus):
