@@ -86,9 +86,7 @@ drive.mount('/content/drive')
 ```
 
 <pre>
-<code>
 Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
-</code>
 </pre>
 
 ```python
@@ -156,16 +154,16 @@ corpus[:10]
 ```
 
 <pre>
-['looking for some education ',
- 'made my way into the night ',
- 'all that bullshit conversation ',
- 'i don t even wanna waste your time ',
- 'let s just say that maybe ',
- 'you could help me ease my mind ',
- 'if that s love in your eyes ',
- 'it s more than enough ',
- 'had some bad love ',
- 'ooh , ooh looking for some affirmation ']
+['<start> looking for some education <end>',
+ '<start> made my way into the night <end>',
+ '<start> all that bullshit conversation <end>',
+ '<start> i don t even wanna waste your time <end>',
+ '<start> let s just say that maybe <end>',
+ '<start> you could help me ease my mind <end>',
+ '<start> if that s love in your eyes <end>',
+ '<start> it s more than enough <end>',
+ '<start> had some bad love <end>',
+ '<start> ooh , ooh looking for some affirmation <end>']
 </pre>
 
 ```python
@@ -369,7 +367,7 @@ generate_text(model, tokenizer, init_sentence="<start> l love", max_len=20)
 ```
 
 <pre>
-'l love amour , yeah'
+'<start> l love amour , yeah <end> '
 </pre>
 ## 회고
 
