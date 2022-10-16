@@ -74,7 +74,7 @@ author_profile: false
   .page__content p > strong {
     font-size: 0.8rem !important;
   }
-  .language-result div pre {
+  .language-result {
     background : #ffffff00;
     color : red;
     font-size: 0.8rem;
