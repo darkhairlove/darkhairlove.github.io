@@ -76,7 +76,7 @@ author_profile: false
   }
   .language-result {
     background : #ffffff00;
-    color : red;
+    ; color : red;
     font-size: 0.8rem;
     }
   </style>
@@ -89,9 +89,9 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-<pre>
+```result
 Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
-</pre>
+```
 
 ```python
 import re
@@ -115,11 +115,11 @@ print("데이터 크기:", len(raw_corpus))
 print("Examples:\n", raw_corpus[:3])
 ```
 
-<pre>
+```result
 데이터 크기: 187088
 Examples:
  ['Looking for some education', 'Made my way into the night', 'All that bullshit conversation']
-</pre>
+```
 
 ```python
 # 입력된 문장을
@@ -188,7 +188,7 @@ tensor, tokenizer = tokenize(corpus)
 print(tensor.shape)
 ```
 
-<pre>
+```result
 [[  2 290  28 ...   0   0   0]
  [  2 219  13 ...   0   0   0]
  [  2  25  15 ...   0   0   0]
@@ -197,7 +197,7 @@ print(tensor.shape)
  [  2   4  24 ...   3   0   0]
  [  2  23   9 ...   3   0   0]] <keras_preprocessing.text.Tokenizer object at 0x7f19fb392410>
 (156013, 15)
-</pre>
+```
 
 ```python
 
@@ -208,10 +208,10 @@ print(src_input[0])
 print(tgt_input[0])
 ```
 
-<pre>
+```result
 [   2  290   28   94 4486    3    0    0    0    0    0    0    0    0]
 [ 290   28   94 4486    3    0    0    0    0    0    0    0    0    0]
-</pre>
+```
 
 ```python
 BUFFER_SIZE = len(src_input)
@@ -271,7 +271,7 @@ model.compile(loss=loss, optimizer=optimizer)
 model.fit(dataset_train, epochs=10, validation_data=dataset_val, batch_size=256) 
 ```
 
-<pre>
+```result
 Epoch 1/10
 487/487 [==============================] - 37s 38ms/step - loss: 3.2869 - val_loss: 2.8996
 Epoch 2/10
@@ -292,10 +292,10 @@ Epoch 9/10
 487/487 [==============================] - 18s 37ms/step - loss: 1.0897 - val_loss: 2.1351
 Epoch 10/10
 487/487 [==============================] - 18s 37ms/step - loss: 1.0249 - val_loss: 2.1567
-</pre>
-<pre>
+```
+```result
 <keras.callbacks.History at 0x7f19fd39af10>
-</pre>
+```
 embedding_size = 512 /
 
 hidden_size = 2048
@@ -319,7 +319,7 @@ idden_size  = 1026
 model.summary()
 ```
 
-<pre>
+```result
 Model: "text_generator"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -337,7 +337,7 @@ Total params: 85,276,897
 Trainable params: 85,276,897
 Non-trainable params: 0
 _________________________________________________________________
-</pre>
+```
 
 ```python
 
@@ -369,9 +369,10 @@ generate_text(model, tokenizer, init_sentence="<start> l love", max_len=20)
 # generate_text 함수에 lyricist 라 정의한 모델을 이용해서 ilove 로 시작되는 문장을 생성
 ```
 
-
+```result
 '<start> l love amour , yeah <end> '
-
+```
+  
 ## 회고
 
 - 어려웠던 점 : embedding_size와 hidden_size를 얼마만큼 늘려야 loss를 줄일지가 어려웠다. model.fit의 인자를 batch_size만 추가했다.
