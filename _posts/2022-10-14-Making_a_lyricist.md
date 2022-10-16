@@ -152,7 +152,7 @@ for sentence in raw_corpus:
     corpus.append(preprocessed_sentence)
 corpus[:10]
 ```
-
+<pre>
 ```
 ['<start> looking for some education <end>',
  '<start> made my way into the night <end>',
@@ -165,6 +165,7 @@ corpus[:10]
  '<start> had some bad love <end>',
  '<start> ooh , ooh looking for some affirmation <end>']
 ```
+</pre>
 
 ```python
 def tokenize(corpus):
@@ -366,9 +367,9 @@ generate_text(model, tokenizer, init_sentence="<start> l love", max_len=20)
 # generate_text 함수에 lyricist 라 정의한 모델을 이용해서 ilove 로 시작되는 문장을 생성
 ```
 
-<pre>
+
 '<start> l love amour , yeah <end> '
-</pre>
+
 ## 회고
 
 - 어려웠던 점 : embedding_size와 hidden_size를 얼마만큼 늘려야 loss를 줄일지가 어려웠다. model.fit의 인자를 batch_size만 추가했다.
