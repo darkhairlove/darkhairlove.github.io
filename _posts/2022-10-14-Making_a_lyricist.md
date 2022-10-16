@@ -4,7 +4,7 @@ title:  "[AIFFEL]_작사가만들기"
 categories: AI
 tag: [python, aiffel, ai]
 toc: true
-author_profile: false
+author_profile: true
 ---
 
 <head>
