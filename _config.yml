@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dirt" #"default" # "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "AI Note"
+title                    : "SuJin Note"
 title_separator          : "|"
 subtitle                 : "study AI" # site tagline that appears below site title in masthead
 name                     : "SuJinPark"
