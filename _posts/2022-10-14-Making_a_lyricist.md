@@ -152,7 +152,7 @@ for sentence in raw_corpus:
     corpus.append(preprocessed_sentence)
 corpus[:10]
 ```
-```
+```result
 ['<start> looking for some education <end>',
  '<start> made my way into the night <end>',
  '<start> all that bullshit conversation <end>',
