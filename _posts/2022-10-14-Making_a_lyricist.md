@@ -152,8 +152,8 @@ for sentence in raw_corpus:
     corpus.append(preprocessed_sentence)
 corpus[:10]
 ```
-{%raw%}
-```
+<pre>
+<markdown-off>
 ['<start> looking for some education <end>',
  '<start> made my way into the night <end>',
  '<start> all that bullshit conversation <end>',
@@ -164,8 +164,8 @@ corpus[:10]
  '<start> it s more than enough <end>',
  '<start> had some bad love <end>',
  '<start> ooh , ooh looking for some affirmation <end>']
- ```
-{%endraw%}
+</markdown-off>
+</pre>
 
 ```python
 def tokenize(corpus):
