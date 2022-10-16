@@ -86,7 +86,9 @@ drive.mount('/content/drive')
 ```
 
 <pre>
+<code>
 Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+</code>
 </pre>
 
 ```python
