@@ -76,7 +76,6 @@ author_profile: false
   }
   .language-result {
     background : #ffffff00;
-    ; color : red;
     font-size: 0.8rem;
     }
   </style>
