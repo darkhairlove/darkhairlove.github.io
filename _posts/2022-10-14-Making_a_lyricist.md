@@ -6,6 +6,8 @@ categories: AI
 tag: [python, aiffel, ai]
 toc: true
 author_profile: true
+sidebar:
+  nav: "docs"
 ---
 
 <head>
