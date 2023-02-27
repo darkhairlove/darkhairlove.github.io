@@ -5,6 +5,8 @@ excerpt: "몇 단어를 적었을 때, 작사가 가능하도록 만들기"
 categories: AI
 tag: [python, aiffel, ai]
 toc: true
+toc_sticky: true
+toc_label: 목차
 author_profile: true
 sidebar:
   nav: "docs"
