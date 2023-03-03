@@ -12,79 +12,6 @@ sidebar:
   nav: "docs"
 ---
 
-<head>
-  <style>
-    table.dataframe {
-      white-space: normal;
-      width: 100%;
-      height: 240px;
-      display: block;
-      overflow: auto;
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      line-height: 20px;
-      text-align: center;
-      border: 0px !important;
-    }
-
-    table.dataframe th {
-      text-align: center;
-      font-weight: bold;
-      padding: 8px;
-    }
-
-    table.dataframe td {
-      text-align: center;
-      padding: 8px;
-    }
-
-    table.dataframe tr:hover {
-      background: #b8d1f3; 
-    }
-
-    .output_prompt {
-      overflow: auto;
-      font-size: 0.9rem;
-      line-height: 1.45;
-      border-radius: 0.3rem;
-      -webkit-overflow-scrolling: touch;
-      padding: 0.8rem;
-      margin-top: 0;
-      margin-bottom: 15px;
-      font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-      color: $code-text-color;
-      border: solid 1px $border-color;
-      border-radius: 0.3rem;
-      word-break: normal;
-      white-space: pre;
-    }
-
-  .dataframe tbody tr th:only-of-type {
-      vertical-align: middle;
-  }
-
-  .dataframe tbody tr th {
-      vertical-align: top;
-  }
-
-  .dataframe thead th {
-      text-align: center !important;
-      padding: 8px;
-  }
-
-  .page__content p {
-      margin: 0 0 0px !important;
-  }
-
-  .page__content p > strong {
-    font-size: 0.8rem !important;
-  }
-  .language-result {
-    background : #ffffff00;
-    font-size: 0.8rem;
-    }
-  </style>
-</head>
 
 # 스택(stack)
 - FILO : 가장 처음에 넣은 데이터가 가장 마지막에 빠짐
@@ -94,6 +21,7 @@ sidebar:
 - 파이썬에서 기본 자료형인 리스트로 구현
 append()를 쓰면 삽입
 pop()을 쓰면 삭제
+
 # 큐(queue)
   - FIFO : 가장 처음에 넣은 데이터가 가장 먼저 빠짐
   - LILO : 가장 마지막에 넣은 데이터가 가장 마지막에 빠짐
@@ -104,10 +32,9 @@ pop()을 쓰면 삭제
   굳이 이런 모듈을 사용하지 않고 덱을 많이 사용
       
       `from collections import deque`
-      
-      덱 : Double - Ended Queue의 약자
-      
-      덱은 앞뒤 구분없이 어느 쪽으로든 넣고 뺄 수 있다.
+    
+  - 덱 : Double - Ended Queue의 약자  
+    덱은 앞뒤 구분없이 어느 쪽으로든 넣고 뺄 수 있다.
         
 # 우선순위 큐(Priority Queue)
   - 내부적으로 힙(heap)이라는 완전 이진 트리 (complete binary tree)으로 되어 있다.
@@ -123,13 +50,14 @@ pop()을 쓰면 삭제
   - `heapq.heappush(heap, item)` : item을 heap에 추가.
   - `heapq.heappop(heap)` : heap에서 가장 작은 원소를 pop & return. 비어 있는 경우 IndexError
   - `heapq.heapify(x)` : 리스트 x를 즉각적으로 heap으로 변환.
+
 # 최대힙과 최소힙
   - Python의 heapq는 최소힙, c++의 priority_queue는 최대힙
   - Python에서 최대힙을 만들고자 할 때, 부호를 바꿔 저장.
   - 데이터를 넣기 전에 전부 부호를 반대로 바꿔서 넣으면 순서가 뒤집혀 저장되므로 최대힙
   - pop한 값은 다시 부호를 바꾸면 원래의 값
 
-[프로그래머스 문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42626#)
+[프로그래머스 [더 맵게] 문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42626#)
 
 ```python
 # 정확도 테스트 100점, 효율성 테스트 0점
