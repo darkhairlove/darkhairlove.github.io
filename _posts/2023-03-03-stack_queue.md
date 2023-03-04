@@ -1,4 +1,13 @@
 ---
+layout: post
+title:  "스택 큐 우선순위 큐 최대힙 최소힙"
+date:   2015-04-18T14:25:52-05:00
+author: Ben Centra
+categories: Jekyll
+tags:	jekyll welcome
+cover:  "/assets/instacode.png"
+---
+<!-- ---
 layout: single
 title:  "스택 큐 우선순위 큐 최대힙 최소힙"
 excerpt: "알고리즘 코딩 테스트 책 정리"
@@ -10,7 +19,7 @@ toc_label: 목차
 author_profile: true
 sidebar:
   nav: "docs"
----
+--- -->
 
 
 # 스택(stack)
