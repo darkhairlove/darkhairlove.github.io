@@ -1,26 +1,26 @@
-<div class="link-wrapper">
-  {% if site.platforms %}
-  <ul class="link">
-    {%- for platform in site.platforms %}
-    <li><a href="{{ platform.link }}">{{ platform.icon }}&nbsp;{{ platform.name }}</a></li>
-    {%- endfor %}
-  </ul>
-  {% endif %}
-
-  {% if site.navigation %}
-  <h3 class="sidebar-h3">Contents:</h3>
-  <ul class="content">
-  {%- for item in site.navigation %}
-    <li><a href="{{ item.link }}">{{ item.name }}</a>
-        {% if item.sublist %}
-        <ul class="sublist">
-            {%- for subitem in item.sublist %}
-            <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
-            {%- endfor %}
-        </ul>
-        {% endif %}
-    </li>
-  {%- endfor %}
-  </ul>
-  {% endif %}
-</div>
+<link rel="stylesheet" href="{{ "/assets/css/sidebar.css" | relative_url }}" media="screen and (min-width: 70em)">
+<aside style="display: none">
+  <nav>
+  {%- for item in site.navigation -%}
+    {%- assign node = site.pages | where: "name", item.file | first -%}
+    {%- assign url = item.url | default: node.url -%}
+    {%- assign title = item.title | default: node.title -%}
+    {%- assign icon = item.icon | default: item.sidebaricon -%}
+    <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
+      <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
+      <span aria-hidden="true">{{ title }}</span>
+    </a>
+  {%- endfor -%}
+  {%- for item in site.external -%}
+    {%- assign node = site.pages | where: "name", item.file | first -%}
+    {%- assign url = item.url | default: node.url -%}
+    {%- assign title = item.title | default: node.title -%}
+    {%- assign icon = item.icon | default: item.sidebaricon -%}
+    <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
+      <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
+      <span aria-hidden="true">{{ title }}</span>
+    </a>
+  {%- endfor -%}
+  </nav>
+  <div class="description">{{ site.description }}</div>
+</aside>
