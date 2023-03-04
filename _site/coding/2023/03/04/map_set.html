@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>맵(map)과 집합(set) | Minimalistic</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="맵(map)과 집합(set)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="알고리즘 코딩 테스트 책 정리" />
+<meta property="og:description" content="알고리즘 코딩 테스트 책 정리" />
+<link rel="canonical" href="http://localhost:4000/coding/2023/03/04/map_set.html" />
+<meta property="og:url" content="http://localhost:4000/coding/2023/03/04/map_set.html" />
+<meta property="og:site_name" content="Minimalistic" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-04T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="맵(map)과 집합(set)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-04T00:00:00+09:00","datePublished":"2023-03-04T00:00:00+09:00","description":"알고리즘 코딩 테스트 책 정리","headline":"맵(map)과 집합(set)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/coding/2023/03/04/map_set.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.jpg"}},"url":"http://localhost:4000/coding/2023/03/04/map_set.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/colors-auto.css?v=7941e02880d05669064bb8fbe35fd38fa4e4dcc9">
+    <link rel="stylesheet" href="/assets/css/style.css?v=7941e02880d05669064bb8fbe35fd38fa4e4dcc9">
+    <link rel="preload" href="/assets/img/logo.jpg" as="image">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <header>
+    <div class="header-title">
+        
+<img class="logo" src="/assets/img/logo.jpg" alt="Logo">
+
+
+
+<h1>Minimalistic</h1>
+
+
+
+<p class="addr"><i class="fa-solid fa-envelope"></i>&nbsp;<a href="mailto:person@address.com">person@address.com</a></p>
+
+
+    </div>
+    <div class="header-title-mobile">
+        <section>
+        
+<img class="logo" src="/assets/img/logo.jpg" alt="Logo">
+
+
+
+<h1>Minimalistic</h1>
+
+
+
+<p class="addr"><i class="fa-solid fa-envelope"></i>&nbsp;<a href="mailto:person@address.com">person@address.com</a></p>
+
+
+        </section>
+    </div>
+
+
+<p>Minimalistic is a theme powered by Jekyll.</p>
+
+
+    
+    <p class="view"><a href="https://github.com/darkhairlove/darkhairlove.github.io">View the Project on GitHub<br><small>darkhairlove/darkhairlove.github.io</small></a></p>
+    
+
+    
+
+
+<div class="link-wrapper">
+  
+  <ul class="link">
+    <li><a href="https://github.com/vaibhavvikas"><i class="fa-brands fa-github"></i>&nbsp;GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/vaibhavvikas"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a></li>
+  </ul>
+  
+
+  
+  <h3 class="sidebar-h3">Contents:</h3>
+  <ul class="content">
+    <li><a href="./index.html">Readme</a>
+        
+        <ul class="sublist">
+            <li><a href="./index.html#small-image">Image</a></li>
+        </ul>
+        
+    </li>
+    <li><a href="./another-page.html">Another Page</a>
+        
+    </li>
+  </ul>
+  
+</div>
+
+</header>
+        <div class="link-wrapper-mobile">
+    
+    <ul class="link">
+    <nobr><a href="https://github.com/vaibhavvikas" rel="me"><i class="fa-brands fa-github"></i>&nbsp;GitHub</a><span style="margin-left: 6px;"></span></nobr>
+    <nobr><a href="https://www.linkedin.com/in/vaibhavvikas" rel="me"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a></nobr>
+    </ul>
+    
+
+    
+    <h3 class="sidebar-h3">Contents:</h3>
+    <ul class="content">
+      <li><a href="./index.html">Readme</a>
+          
+          <ul class="sublist">
+              <li><a href="./index.html#small-image">Image</a></li>
+          </ul>
+          
+      </li>
+      <li><a href="./another-page.html">Another Page</a>
+          
+      </li>
+    </ul>
+    
+</div>
+
+        <div class="sidebar-footer">
+    
+    <p>This project is maintained by <a href="https://github.com/darkhairlove">darkhairlove</a></p>
+    
+
+<p style="margin-bottom: 0px">
+    <small>
+        <a href="https://github.com/vaibhavvikas/jekyll-theme-minimalistic">Minimalistic</a> &mdash; Theme by 
+        <a href="https://github.com/vaibhavvikas/">vaibhavvikas</a>
+    </small>
+</p>
+</div>
+      </div>
+      <section>
+      
+
+
+
+
+
+<div id="main" role="main">
+  <div class="link-wrapper">
+  
+  <ul class="link">
+    <li><a href="https://github.com/vaibhavvikas"><i class="fa-brands fa-github"></i>&nbsp;GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/vaibhavvikas"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a></li>
+  </ul>
+  
+
+  
+  <h3 class="sidebar-h3">Contents:</h3>
+  <ul class="content">
+    <li><a href="./index.html">Readme</a>
+        
+        <ul class="sublist">
+            <li><a href="./index.html#small-image">Image</a></li>
+        </ul>
+        
+    </li>
+    <li><a href="./another-page.html">Another Page</a>
+        
+    </li>
+  </ul>
+  
+</div>
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="맵(map)과 집합(set)">
+    <meta itemprop="description" content="알고리즘 코딩 테스트 책 정리">
+    <meta itemprop="datePublished" content="2023-03-04T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/coding/2023/03/04/map_set.html" class="u-url" itemprop="url">맵(map)과 집합(set)
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
+              <ul class="toc__menu"><li><a href="#맵map의-특징">맵(map)의 특징</a></li><li><a href="#집합set의-특징">집합(set)의 특징</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="맵map의-특징">맵(map)의 특징</h1>
+
+<ul>
+  <li>key, value로 데이터를 저장</li>
+  <li>정수, 문자열, 튜플 등 어떠한 자료형도 올 수 있다.</li>
+  <li>key는 중복될 수 없고, value는 중복되어도 상관 없다.</li>
+  <li>Python - dictionary(<strong>딕셔너리</strong>), 시간 복잡도 O(1)</li>
+  <li>C++ - map 헤더를 include 후 사용 가능, 시간 복잡도 O(logN)</li>
+</ul>
+
+<h1 id="집합set의-특징">집합(set)의 특징</h1>
+
+<ul>
+  <li>중복이 없다.</li>
+  <li>C++ - 시간복잡도 O(logN), unordered set의 시간복잡도는 O(1)</li>
+  <li>Python - 시간복잡도 O(1), 수학 기본 연산자 사용 가능 : 합집합, 교집합</li>
+</ul>
+
+<p><a href="https://www.acmicpc.net/problem/7785">백준 예시 문제</a></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">dic</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span> <span class="c1"># list로 풀면 시간초과
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="s">'enter'</span><span class="p">:</span>
+        <span class="n">dic</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">dic</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>딕셔너리를 이용해 풀 수도 있다.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-03-04T00:00:00+09:00">March 4, 2023</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/coding/2023/03/03/stack_queue.html" class="pagination--pager" title="스택 큐 우선순위 큐 최대힙 최소힙
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      </section>
+      <footer>
+    
+    <p>This project is maintained by <a href="https://github.com/darkhairlove">darkhairlove</a></p>
+    
+
+<p style="margin-bottom: 0px">
+    <small>
+        <a href="https://github.com/vaibhavvikas/jekyll-theme-minimalistic">Minimalistic</a> &mdash; Theme by 
+        <a href="https://github.com/vaibhavvikas/">vaibhavvikas</a>
+    </small>
+</p>
+</footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>
