@@ -1,204 +1,154 @@
-# jekyll-theme-minimalistic
+# [Start Bootstrap - Clean Blog Jekyll](https://startbootstrap.com/themes/clean-blog-jekyll/) - Official Jekyll Version
 
-[![Featured](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-theme-minimalistic/)
-[![GitHub top language](https://img.shields.io/github/languages/top/vaibhavvikas/jekyll-theme-minimalistic)](#)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vaibhavvikas/jekyll-theme-minimalistic)](#)
-[![GitHub stars](https://img.shields.io/github/stars/vaibhavvikas/jekyll-theme-minimalistic)](https://github.com/vaibhavvikas/jekyll-theme-minimalistic/stargazers)
-[![Ruby Gem](https://github.com/vaibhavvikas/jekyll-theme-minimalistic/actions/workflows/gem-push.yml/badge.svg)](https://github.com/vaibhavvikas/jekyll-theme-minimalistic/actions/workflows/gem-push.yml)
-[![pages-build-deployment](https://github.com/vaibhavvikas/jekyll-theme-minimalistic/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/vaibhavvikas/jekyll-theme-minimalistic/actions/workflows/pages/pages-build-deployment)
+[Clean Blog Jekyll](https://startbootstrap.com/themes/clean-blog-jekyll/) is a stylish, responsive blog theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working contact form powered by [Formspree](https://formspree.io/).
 
+This repository holds the official Jekyll version of the Clean Blog theme on Start Bootstrap!
 
-Minimalistic theme is based on gh-pages minimal theme, with navigation in the sidebar and super amazing features. Wanna see it in action? You can view a live demo at [Minimalistic](https://vaibhavvikas.github.io/jekyll-theme-minimalistic/).
+## Preview
 
-![Screenshot](https://user-images.githubusercontent.com/28614457/179896288-56255d9e-946a-4566-aca4-85459d403ff9.png)
+[![Clean Blog (Jekyll) Preview](https://startbootstrap.com/assets/img/screenshots/themes/clean-blog-jekyll.png)](http://StartBootstrap.github.io/startbootstrap-clean-blog-jekyll/)
 
-## Features
-1. Auto light/dark mode.
-2. Syntax Highlighting for light/dark mode.
-3. Logo Support for the page.
-4. Links in Sidebar.
-5. List/Sublist in Sidebar.
-6. Fully responsive with mobile support.
-7. Logo/Favicon Support.
-8. Github-Pages Support.
-9. Card Support
-10. Under active development.
-11. And many more. 😁
+**[View Live Preview](http://StartBootstrap.github.io/startbootstrap-clean-blog-jekyll/)**
 
-## Usage
+## Installation & Setup
 
-You can refer to this [Wiki Link](https://github.com/vaibhavvikas/jekyll-theme-minimalistic/wiki) if you want to use this theme for creating github pages for your own custom repository.
+### Using RubyGems
 
-To use the Minimalistic theme:
+When installing the theme using RubyGems, demo images, posts, and pages are not included. Follow the instructions below for complete setup.
 
-1. Add the following line to your Gemfile
+1. (Optional) Create a new Jekyll site: `jekyll new my-site`
+2. Replace the current theme in your `Gemfile` with `gem "jekyll-theme-clean-blog"`.
+3. Install the theme (run the command inside your site directory): `bundle install`
+4. Replace the current theme in your `_config.yml` file with `theme: jekyll-theme-clean-blog`.
+5. Build your site: `bundle exec jekyll serve`
 
-```ruby
-gem "jekyll-remote-theme"
-```
+Assuming there are no errors and the site is building properly, follow these steps next:
 
-then run `bundle install` to install the plugin.
+1. Create the following pages if they do not exist already (or change the extension of existing markdown files from `.md` to `.html`):
 
-2. Add the following to your site's `_config.yml` to activate the plugin:
+   * `index.html` - set to `layout: home`
+   * `about.html` - set to `layout: page`
+   * `contact.html` - set to `layout: page`
+   * `posts/index.html` - set to `layout: page` (you will also need to create a `posts` directory)
 
-```yml
-plugins:
-  - jekyll-remote-theme
-```
+2. Configure the `index.html` front matter. Example:
 
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
-
-1. Add the following line to your `config.yml` to use the theme
-
-```yml
-remote_theme: vaibhavvikas/jekyll-theme-minimalistic
-```
-
-then running `bundle exec jekyll serve` for local deployment.
-
-## Customizing
-
-### Configuration variables
-
-Minimalistic will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
-google_analytics: [Your Google Analytics tracking ID]
-```
-
-Choose light, dark, or automatically adjusting theme based on system theme:
-
-```yml
-color-scheme: auto/light/dark
-```
-
-Specify logo for the website:
-
-```yml
-logo: /assets/img/<logo_file>
-```
-
-Enable favicon by putting a `favicon.ico` in the repo's root directory and add the following line in `config.yml`:
-
-```yml
-favicon: true
-```
-
-### Customizing Sidebar
-
-You can define a list of platforms that are linked from the sidebar in `_config.yml`:
-
-```yml
-platforms:
-  - name: GitHub
-    icon: <i class="fa-brands fa-github"></i>
-    link: https://github.com/vaibhavvikas
-  - name: LinkedIn
-    icon: <i class="fa-brands fa-linkedin"></i>
-    link: https://www.linkedin.com/in/vaibhavvikas
-  - ...
-```
-
-### Navigation
-
-You can also define, hyperlinks for specific pages or section of a pages (very helpful if creating multipage documentation or easy navigation between multiple sections). 
-
-For adding navigation do the following steps:
-
-1. Put your .md files in the root directory. and add the below text on top of pages to get it converted to html by jekyll.
-   
-```yml
----
-layout: default
----
-```
-
-2. Use the navigation example below to add navigation section in _config.yml file. Treat all your .md files as .html files. Currently it only supports one nesting in sublist.
-
-```yml
-navigation:
-  - name: Readme
-    link: ./index.html
-    sublist:
-      - name: Image
-        link: ./index.html#small-image
-  - name: Another Page
-    link: ./another-page.html
-  - ...
-```
-
-### Example:
-
-[Live Example](https://vaibhavvikas.github.io/jekyll-theme-minimalistic/)\
-[Code used in GitHub page](https://github.com/vaibhavvikas/jekyll-theme-minimalistic/tree/gh-pages)
-
-Lets say you have a file name xyz.md, you put that into the root dir. Now, add the text in step 1 at the top of the md file. After that for the text in _config.yml you will put it like:
-
-```yml
-navigation:
-  - name: [Write name of your hyperlink]
-    link: ./xyz.html
-```
-
-### Adding Card:
-
-Use the code template:
-```html
-<div class="card">
-  <h3>Some Title</h3>
-  <p><b>New Delhi</b>, India<br>
-  Some Text</p>
-  <a href="https://vaibhavvikas.ml/"><span class="card-link-spanner"></span></a>
-</div>
-```
-
-### Stylesheet
-
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-
-    ```scss
+    ```markdown
     ---
+    layout: home
+    background: '/PATH_TO_IMAGE'
     ---
-
-    @import "{{ site.theme }}";
     ```
 
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+3. Configure the `about.html`, `contact.html`, and `posts/index.html` front matter. Example:
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+    ```markdown
+    ---
+    layout: page
+    title: Page Title
+    description: This is the page description.
+    background: '/PATH_TO_IMAGE'
+    ---
+    ```
 
-### Customizing Google Analytics code
+4. For each post in the `_posts` directory, update the front matter. Example:
 
-Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
+    ```markdown
+    ---
+    layout: post
+    title: "Post Title"
+    subtitle: "This is the post subtitle."
+    date: YYYY-MM-DD HH:MM:SS
+    background: '/PATH_TO_IMAGE'
+    ---
+    ```
 
-## Previewing the theme locally
+    For reference, look at the [demo repository](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) to see how the files are set up.
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
+5. Add the form to the `contact.html` page. Add the following code to your `contact.html` page:
 
-1. Clone down the theme's repository (`git clone https://github.com/vaibhavvikas/jekyll-theme-minimalistic`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+    ```html
+    <form name="sentMessage" id="contactForm" novalidate>
+      <div class="control-group">
+        <div class="form-group floating-label-form-group controls">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+          <p class="help-block text-danger"></p>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="form-group floating-label-form-group controls">
+          <label>Email Address</label>
+          <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+          <p class="help-block text-danger"></p>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+          <label>Phone Number</label>
+          <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+          <p class="help-block text-danger"></p>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="form-group floating-label-form-group controls">
+          <label>Message</label>
+          <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+      </div>
+      <br>
+      <div id="success"></div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+      </div>
+    </form>
+    ```
 
-## Running tests
+    Make sure you have the `email` setting in your `_config.yml` file set to a working email address! Once this is set, fill out the form and then check your email, verify the email address using the link sent to you by Formspree, and then the form will be working!
 
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
+6. Build your site: `bundle exec jekyll serve`
 
-## Contributors
+### Using Core Files
 
-All contributions and suggestions are welcome.
+When using the core files, the demo images, posts, and pages are all included with the download. After following the instructions below, you can then go and change the content of the pages and posts.
 
-## Credits:
+1. [Download](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/archive/master.zip) or Clone the repository.
+2. Update the following configuration settings in your `_config.yml` file:
 
-This theme was built using [Minimalist](https://github.com/BDHU/minimalist) theme by BDHU and [Minimal](https://github.com/pages-themes/minimal) by GithHub.
+    * `baseurl`
+    * `url`
+    * `title`
+    * `email` (after setting this setting to a working email address, fill out the form on the contact page and send it - then check your email and verify the address and the form will send you messages when used)
+    * `description`
+    * `author`
+    * `twitter_username` (Optional)
+    * `facebook_username` (Optional)
+    * `github_username` (Optional)
+    * `linkedin_username` (Optional)
+    * `instagram_username` (Optional)
+
+3. Build your site: `bundle exec jekyll serve`
+
+## Bugs and Issues
+
+Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/issues) here on GitHub!
+
+## About
+
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+
+* <https://startbootstrap.com>
+* <https://twitter.com/SBootstrap>
+
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**.
+
+* <http://davidmiller.io>
+* <https://twitter.com/davidmillerhere>
+* <https://github.com/davidtmiller>
+
+Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/blob/master/LICENSE) license.
