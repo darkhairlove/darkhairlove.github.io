@@ -76,12 +76,12 @@ descriptions:
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
 social:
-  - name: Twitter
-    icon: twitter
-    username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
-    desc: Follow me on Twitter
-    share: false
+  # - name: Twitter
+  #   icon: twitter
+  #   username: TheBenCentra
+  #   url: https://twitter.com/TheBenCentra
+  #   desc: Follow me on Twitter
+  #   share: false
 
   - name: Facebook
     icon: facebook
@@ -197,7 +197,7 @@ protocols:
     fb_image_height: 605
     fb_image_type: "image/png"
 
-    twitter_image: "/assets/logo.png"
+    #twitter_image: "/assets/logo.png"
 
     os_repo: "https://github.com/bencentra/centrarium.com"
     os_rcs_type: "git"
