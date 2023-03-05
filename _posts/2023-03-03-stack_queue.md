@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "스택 큐 우선순위 큐 최대힙 최소힙"
-date:   2015-04-18T14:25:52-05:00
-author: Ben Centra
-categories: Jekyll
-tags:	jekyll welcome
+date:   2023-03-05 08:43:59
+author: SuJin
+categories: coding
+tags:	Python
 cover:  "/assets/instacode.png"
 ---
 <!-- ---

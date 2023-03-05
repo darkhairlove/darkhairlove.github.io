@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Centrarium</title>
-    <description>A simple yet classy theme for your Jekyll website or blog.
+    <title>AI NOTE</title>
+    <description>studying AI and Python
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Mar 2023 01:58:40 +0900</pubDate>
-    <lastBuildDate>Sun, 05 Mar 2023 01:58:40 +0900</lastBuildDate>
+    <pubDate>Sun, 05 Mar 2023 14:43:04 +0900</pubDate>
+    <lastBuildDate>Sun, 05 Mar 2023 14:43:04 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
         <title>맵(map)과 집합(set)</title>
         <description>&lt;h1 id=&quot;맵map의-특징&quot;&gt;맵(map)의 특징&lt;/h1&gt; &lt;ul&gt; &lt;li&gt;key, value로 데이터를 저장&lt;/li&gt; &lt;li&gt;정수, 문자열, 튜플 등 어떠한 자료형도 올 수 있다.&lt;/li&gt; &lt;li&gt;key는 중복될 수 없고, value는 중복되어도 상관 없다.&lt;/li&gt; &lt;li&gt;Python - dictionary(&lt;strong&gt;딕셔너리&lt;/strong&gt;), 시간 복잡도...</description>
-        <pubDate>Sat, 04 Mar 2023 00:00:00 +0900</pubDate>
+        <pubDate>Sat, 04 Mar 2023 17:43:59 +0900</pubDate>
         <link>http://localhost:4000/coding/2023/03/04/map_set.html</link>
         <guid isPermaLink="true">http://localhost:4000/coding/2023/03/04/map_set.html</guid>
-        
-        <category>map</category>
-        
-        <category>set</category>
         
         <category>Python</category>
         
@@ -31,7 +27,7 @@
       <item>
         <title>[AIFFEL]_작사가만들기</title>
         <description>&lt;head&gt; &lt;style&gt; table.dataframe { white-space: normal; width: 100%; height: 240px; display: block; overflow: auto; font-family: Arial, sans-serif; font-size: 0.9rem; line-height: 20px; text-align: center; border: 0px !important; } table.dataframe th {...</description>
-        <pubDate>Fri, 14 Oct 2022 00:00:00 +0900</pubDate>
+        <pubDate>Fri, 14 Oct 2022 17:43:59 +0900</pubDate>
         <link>http://localhost:4000/ai/2022/10/14/Making_a_lyricist.html</link>
         <guid isPermaLink="true">http://localhost:4000/ai/2022/10/14/Making_a_lyricist.html</guid>
         
@@ -47,7 +43,7 @@
       <item>
         <title>[AIFFEL] CV_고양이수염붙이기</title>
         <description>&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;cv2&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;dlib&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__version__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dlib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__version__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;pre&gt; 4.5.3 19.22.1...</description>
-        <pubDate>Thu, 13 Oct 2022 00:00:00 +0900</pubDate>
+        <pubDate>Thu, 13 Oct 2022 17:43:59 +0900</pubDate>
         <link>http://localhost:4000/ai/2022/10/13/Putting-on-a-cat's-beard.html</link>
         <guid isPermaLink="true">http://localhost:4000/ai/2022/10/13/Putting-on-a-cat's-beard.html</guid>
         
@@ -57,106 +53,6 @@
         
         
         <category>AI</category>
-        
-      </item>
-    
-      <item>
-        <title>Exclude Post from Search Index</title>
-        <description>&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt; &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code...</description>
-        <pubDate>Tue, 28 Nov 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/test/jekyll/2017/11/28/post-exclude-search.html</link>
-        <guid isPermaLink="true">http://localhost:4000/test/jekyll/2017/11/28/post-exclude-search.html</guid>
-        
-        
-        <category>test</category>
-        
-        <category>Jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Exclude Post from Search Index</title>
-        <description>&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt; &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code...</description>
-        <pubDate>Tue, 28 Nov 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/docs/jekyll/2017/11/28/post-exclude-search.html</link>
-        <guid isPermaLink="true">http://localhost:4000/docs/jekyll/2017/11/28/post-exclude-search.html</guid>
-        
-        
-        <category>docs</category>
-        
-        <category>Jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different...</description>
-        <pubDate>Wed, 01 Mar 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/03/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/03/01/welcome-to-jekyll.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Markdown examples</title>
-        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi...</description>
-        <pubDate>Wed, 01 Feb 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/02/01/markdown-examples.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/02/01/markdown-examples.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Layout: Header Video</title>
-        <description>&lt;p&gt;This post should display a &lt;strong&gt;header with a responsive video&lt;/strong&gt;, if the theme supports it.&lt;/p&gt; &lt;h2 id=&quot;settings&quot;&gt;Settings&lt;/h2&gt; &lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Parameter&lt;/th&gt; &lt;th&gt;Required&lt;/th&gt; &lt;th&gt;Description&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;&lt;/td&gt; &lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;...</description>
-        <pubDate>Mon, 23 Jan 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/test/layout/uncategorized/2017/01/23/layout-header-video.html</link>
-        <guid isPermaLink="true">http://localhost:4000/test/layout/uncategorized/2017/01/23/layout-header-video.html</guid>
-        
-        <category>video</category>
-        
-        <category>layout</category>
-        
-        
-        <category>test</category>
-        
-        <category>Layout</category>
-        
-        <category>Uncategorized</category>
-        
-      </item>
-    
-      <item>
-        <title>Layout: Header Video</title>
-        <description>&lt;p&gt;This post should display a &lt;strong&gt;header with a responsive video&lt;/strong&gt;, if the theme supports it.&lt;/p&gt; &lt;h2 id=&quot;settings&quot;&gt;Settings&lt;/h2&gt; &lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Parameter&lt;/th&gt; &lt;th&gt;Required&lt;/th&gt; &lt;th&gt;Description&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;&lt;/td&gt; &lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;...</description>
-        <pubDate>Mon, 23 Jan 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/docs/layout/uncategorized/2017/01/23/layout-header-video.html</link>
-        <guid isPermaLink="true">http://localhost:4000/docs/layout/uncategorized/2017/01/23/layout-header-video.html</guid>
-        
-        <category>video</category>
-        
-        <category>layout</category>
-        
-        
-        <category>docs</category>
-        
-        <category>Layout</category>
-        
-        <category>Uncategorized</category>
-        
-      </item>
-    
-      <item>
-        <title>Advanced examples</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg&quot; alt=&quot;Swiss Alps&quot; /&gt;&lt;/p&gt; &lt;h2 id=&quot;mathjax&quot;&gt;MathJax&lt;/h2&gt; &lt;p&gt;You can enable MathJax by setting &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax: true&lt;/code&gt; on a page or globally in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. Some examples:&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Euler%27s_formula&quot;&gt;Euler’s formula&lt;/a&gt;...</description>
-        <pubDate>Sun, 01 Jan 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/media/2017/01/01/advanced-examples.html</link>
-        <guid isPermaLink="true">http://localhost:4000/media/2017/01/01/advanced-examples.html</guid>
-        
-        
-        <category>media</category>
         
       </item>
     

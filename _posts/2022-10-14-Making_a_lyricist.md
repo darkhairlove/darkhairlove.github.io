@@ -1,15 +1,11 @@
 ---
-layout: single
+layout: post
 title:  "[AIFFEL]_작사가만들기"
-excerpt: "몇 단어를 적었을 때, 작사가 가능하도록 만들기"
+date:   2022-10-14 08:43:59
+author: SuJin
 categories: AI
-tag: [Python, NLP]
-toc: true
-toc_sticky: true
-toc_label: 목차
-author_profile: true
-sidebar:
-  nav: "docs"
+tags:	Python NLP
+cover:  "/assets/instacode.png"
 ---
 
 <head>
