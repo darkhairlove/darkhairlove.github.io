@@ -95,7 +95,7 @@ social:
     username: Sujin Park
     url: https://github.com/darkhairlove
     desc: Fork me on GitHub
-    share: false
+    share: true
 
   - name: LinkedIn
     icon: linkedin
