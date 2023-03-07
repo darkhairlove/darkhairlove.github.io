@@ -4,9 +4,9 @@ title:  "[AIFFEL]_작사가만들기"
 date:   2022-10-14 08:43:59
 author: Su Jin
 categories: AI
-tags:	Python NLP
-cover:  "/assets/instacode.png"
-disqus_disabled: true
+tags: [Python, NLP]
+cover: ":instacode.png"
+comments_disable: true
 ---
 
 <head>
