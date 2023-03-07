@@ -83,12 +83,12 @@ social:
   #   desc: Follow me on Twitter
   #   share: false
 
-  - name: Facebook
-    icon: facebook
-    username: thebencentra
-    url: ""
-    desc: Friend me on Facebook
-    share: false
+  # - name: Facebook
+  #   icon: facebook
+  #   username: thebencentra
+  #   url: ""
+  #   desc: Friend me on Facebook
+  #   share: false
 
   - name: GitHub
     icon: github

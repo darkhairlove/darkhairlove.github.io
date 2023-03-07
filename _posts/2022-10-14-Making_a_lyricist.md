@@ -2,7 +2,7 @@
 layout: post
 title:  "[AIFFEL]_작사가만들기"
 date:   2022-10-14 08:43:59
-author: SuJin
+author: Su Jin
 categories: AI
 tags:	Python NLP
 cover:  "/assets/instacode.png"
