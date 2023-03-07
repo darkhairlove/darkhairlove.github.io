@@ -136,7 +136,7 @@ post-list:
 home:
   title: Welcome
   button_name: Home
-  new_posts_title: New Articles
+  new_posts_title: New Posts
   new_posts_show_more_button: View More ...
 
 # for archives layout
@@ -171,9 +171,9 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: Hello
+  greetings: Hello, I'm Sujin!
   welcome: Welcome
-  sample: Sample
+  sample: What I learned about Python, algorithms, data analysis, and NLP.
 
 # for contact form
 contact_form:
