@@ -6,6 +6,7 @@ author: Su Jin
 categories: AI
 tags:	Python NLP
 cover:  "/assets/instacode.png"
+disqus_disabled: true
 ---
 
 <head>

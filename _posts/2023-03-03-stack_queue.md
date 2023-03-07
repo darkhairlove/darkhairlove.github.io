@@ -6,6 +6,7 @@ author: Su Jin
 categories: coding
 tags:	Python
 cover:  "/assets/instacode.png"
+disqus_disabled: true
 ---
 
 
