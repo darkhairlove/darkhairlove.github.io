@@ -2,13 +2,13 @@
 # Owner's Personal Information
 ###########################################################
 # This is your brand name
-brand: "Your Brand"
+brand: "AI NOTE"
 
 # text below the brand name
 brand_sub_text: "$site_sample"
 
 # used for seo meta post author (if it's not defined in post)
-name: "Your Name"
+name: "Sujin Park"
 
 # home page top header texts
 home:
@@ -48,9 +48,9 @@ meta_common_description: "Your meta description."
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  #- github: ""
-  #- email: ""
-  #- linkedin: ""
+  - github: "darkhairlove"
+  - email: "suqkr12@gmail.com"
+  - linkedin: "https://www.linkedin.com/in/sujin-park-data-darkhair/"
   #- twitter: ""
   #- mastodon: ""
   #- instagram: ""
@@ -63,7 +63,7 @@ contacts:
 comments:
   # Create a Disqus account and fill out the items below.
   disqus:
-    shortname: ""
+    shortname: "https-darkhairlove-github-io"
   # To use Giscus, go to https://giscus.app and look for the "Configuration".
   # - Enter your repository name, and it will create the following settings for you under "Enable giscus".
   # - Get the corresponding items and fill in the items below.
@@ -76,7 +76,7 @@ comments:
 
 # if no id is provided, this feature will be disabled.
 # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
-google_analytics_id: ""
+google_analytics_id: "G-YMLDH27YFB"
 
 # there are different ways to verify web page. One is adding this as meta into html.
 # make sure you set meta.google_site_verify: true in _data/conf/main.yml
