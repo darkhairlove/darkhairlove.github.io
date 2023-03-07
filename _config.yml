@@ -1,205 +1,122 @@
-# External plugins
-# See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
-plugins:
-  - jekyll-archives # Sorry, not GitHub pages friendly!
-  - jekyll-sitemap
-  - jekyll-paginate-v2
+###########################################################
+# Global Configuration (https://jekyllrb.com/docs/configuration/options/)
+###########################################################
+# if you want to force HTTPS, specify the domain without the http at the start
+# set domain: "your_github_user_name.github.io"
+domain: "darkhairlove.github.io"
 
-exclude:
-  - "/vendor/"
+# your web site url
+# for GitHub Pages, url: "https://your_github_user_name.github.io"
+url: "https://darkhairlove.github.io"
 
-# Site settings
-title: AI NOTE
-subtitle: "studying AI and Python"
-email: suqkr12@gmail.com
-name: Sujin Park
-description: >
-  studying AI and Python
-# Base URL of site (i.e. /blog). It should always start with a slash,
-# and never end with a slash. Set it to a blank value if hosting at the
-# root of your server.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
-logo: "/assets/logo.png"
+# path to this site
+# if your page is located at https://your_github_user_name.github.io/blog, then set baseurl: "/blog"
+baseurl: "https://darkhairlove.github.io/blog"
 
-# Build settings
+# please use TZ database name column on the list table
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#timezone: ""
+
+###########################################################
+# Front Matter Defaults (https://jekyllrb.com/docs/configuration/front-matter-defaults/)
+###########################################################
+defaults:
+  # for posts
+  - scope:
+      # to separate language posts folders
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:path
+
+  # for multilingual posts
+  - scope:
+      # to separate language posts folders
+      path: "*/_posts"
+    values:
+      hidden: true
+      layout: "post"
+      permalink: /:path
+
+  # example: enable setting for all pages. You may still need to enable some setting from _data/conf/posts.yml or _data/conf/main.yml
+  # - scope:
+  #     # an empty string here means all files in the project
+  #     path: ""
+  #   values:
+  #     image_viewer_on: true
+  #     image_lazy_loader_on: true
+
+###########################################################
+# Markdown Options (https://jekyllrb.com/docs/configuration/markdown/)
+# Configuring Jekyll in your GitHub Pages site (https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
+###########################################################
+# This is default for GitHub Pages sites and cannot be changed.
+highlighter: rouge
 markdown: kramdown
-inter_post_navigation: false
-highlightjs_theme: "monokai-sublime"
+kramdown:
+  # This is default for GitHub Pages sites and cannot be changed.
+  syntax_highlighter: rouge
 
-# Pagination Settings
-# https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-pagination:
-  enabled: true
-  collection: 'posts'
-  per_page: 5
-  permalink: "/page/:num/"
-  sort_reverse: true
+###########################################################
+# Plugins (Plugins supported by GitHub Pages https://pages.github.com/versions/)
+###########################################################
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
 
-# Archive settings (see https://github.com/jekyll/jekyll-archives/)
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: 'archive'
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+# since GitHub Pages runs jekyll with "--safe" flag, we need to add supported plugins in here. (only github supported plugins are allowed)
+whitelist:
+  - jekyll-paginate
+  - jekyll-redirect-from
 
-# Disqus comments
-disqus_shortname: https-darkhairlove-github-io
+###########################################################
+# jekyll-paginate (https://jekyllrb.com/docs/pagination/)
+###########################################################
+paginate_path: "/tabs/blog/:num"
+# number of post per page
+# make sure this matches with post_query_paginator_post_per_page in _data/conf/posts.yml
+paginate: 5
 
-# Google analytics
-ga_tracking_id: "G-YMLDH27YFB"
+###########################################################
+# jekyll-redirect-from (https://github.com/jekyll/jekyll-redirect-from)
+###########################################################
+redirect_from:
+  # Disabling generation of redirects.json
+  json: false
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+###########################################################
+# html compression (https://jch.penibelst.de)
+###########################################################
+compress_html:
+  clippings: all
+  comments: all
+  #endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    # disable this feature for development env.
+    envs: [development]
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+###########################################################
+# js compression (for removing comments(/**/only), line breaks and spaces)
+# for debugging js files, simply set linebreak_and_space: false (in production env, this will be enabled automatically)
+# for more info about environments (https://jekyllrb.com/docs/configuration/environments/)
+###########################################################
+compress_js:
+  # enable or disable line breaks and space removal feature for development env.
+  linebreak_and_space: false
+  # disable this feature entirely for development or production env.
+  #ignore: development
 
-# Social icons and sharing options
-#
-# Social settings are used in two places:
-# * In the footer, as links to your personal profiles
-# * After each blog post for sharing widgets
-#
-# Example:
-#
-# social:
-#   - name: Twitter                         # Name of the service
-#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
-#     username: "@TheBenCentra"             # (User) Name to display in the footer link
-#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
-#     desc: Follow me on Twitter            # Description to display as link title, etc
-#     share: true                           # Include in the "Share" section of posts
-social:
-  # - name: Twitter
-  #   icon: twitter
-  #   username: TheBenCentra
-  #   url: https://twitter.com/TheBenCentra
-  #   desc: Follow me on Twitter
-  #   share: true
+###########################################################
+# Sass (https://jekyllrb.com/docs/assets/)
+###########################################################
+sass:
+  sass_dir: assets/_scss
+  # enable css compression
+  style: compressed
 
-  # - name: Facebook
-  #   icon: facebook
-  #   username: thebencentra
-  #   url: ""
-  #   desc: Friend me on Facebook
-  #   share: true
-
-  - name: GitHub
-    icon: github
-    username: Sujin Park
-    url: https://github.com/darkhairlove
-    desc: Fork me on GitHub
-    share: false
-
-  - name: LinkedIn
-    icon: linkedin
-    username: Sujin Park
-    url: https://www.linkedin.com/in/sujin-park-data-darkhair/
-    desc: Connect with me on LinkedIn
-    share: true
-
-  - name: Google+
-    icon: google-plus
-    username: ""
-    url: ""
-    desc: Add me to your Circles
-    share: false
-
-  - name: YouTube
-    icon: youtube
-    username: ""
-    url: ""
-    desc: Subscribe on YouTube
-    share: false
-
-  - name: Instagram
-    icon: instagram
-    username: ""
-    url: ""
-    desc: Follow me on Instagram
-    share: false
-
-  - name: Pinterest
-    icon: pinterest
-    username: ""
-    url: ""
-    desc: Follow me on Pinterest
-    share: false
-
-  - name: SoundCloud
-    icon: soundcloud
-    username: ""
-    url: ""
-    desc: Follow me on SoundCloud
-    share: false
-
-  - name: Tumblr
-    icon: tumblr
-    username: ""
-    url: ""
-    desc: Follow me on Tumblr
-    share: false
-
-  - name: Steam
-    icon: steam
-    username: ""
-    url: ""
-    desc: Friend me on Steam
-    share: false
-
-  - name: Dribbble
-    icon: dribbble
-    username: ""
-    url: ""
-    desc: Follow me on Dribble
-    share: false
-
-  - name: Vimeo
-    icon: vimeo-square
-    username: ""
-    url: ""
-    desc: Follow me on Vimeo
-    share: false
-
-  - name: Vine
-    icon: vine
-    username: ""
-    url: ""
-    desc: Follow me on Vine
-    share: false
-
-  - name: Reddit
-    icon: reddit
-    username: ""
-    url: ""
-    desc: Share to Reddit
-    share: true
-
-  - name: "Hacker News"
-    icon: hacker-news
-    username: ""
-    url: ""
-    desc: Share to Hacker News
-    share: false
-
-# Social sharing protocols
-# These are for automatically generating sharing metadata for FB and Twitter
-# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
-protocols:
-    fb_image: "/assets/logo.png"
-    fb_image_width: 612
-    fb_image_height: 605
-    fb_image_type: "image/png"
-
-    twitter_image: "/assets/logo.png"
-
-    os_repo: "https://github.com/bencentra/centrarium.com"
-    os_rcs_type: "git"
-    os_src: "git@github.com:bencentra/centrarium.com.git"
+###########################################################
+# Exclude these files or folders from production site
+###########################################################
+exclude: ["Gemfile*", "vendor", ".github", ".vscode", "README*", "LICENSE", "docs"]
