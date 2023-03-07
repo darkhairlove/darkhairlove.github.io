@@ -30,7 +30,7 @@ main_nav: True
 - 제주도의 교통 정보로부터 도로별 평균 속도의 회귀 예측을 하는 대회
 - EDA를 통해 예측에 필요한 Feature를 찾고, AutoML을 이용해 회귀 모델 최적화
 
-### [3. [AIFFEL] ****브라질 Olist 이커머스 분석****](https://www.notion.so/AIFFEL-Olist-1274c332683841a387300229c8757278)
+### [3. [AIFFEL] **브라질 Olist 이커머스 분석**](https://www.notion.so/AIFFEL-Olist-1274c332683841a387300229c8757278)
 
 - 브라질 Olist 이커머스 데이터를 이용해 다양한 시각화와 입점하려는 판매자에게 유용한 정보를 주는 목표
 
