@@ -35,7 +35,8 @@ layout: default
     </div>
   </div>
   <div class="home-intro-text markdown-style">
-    {{ content }}
+    {{ site.data.owner[lng].home.top_header_line1
+      | replace: site.data.conf.main.welcome_replace, site.data.lang[lng].constants.welcome }}
   </div>
 </div>
 
