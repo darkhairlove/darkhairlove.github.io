@@ -5,8 +5,6 @@ date:   2023-03-04 08:43:59
 author: Su Jin
 categories: coding
 tags: [Python]
-cover: ":instacode.png"
-comments_disable: true
 ---
 
 
