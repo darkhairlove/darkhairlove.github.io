@@ -274,7 +274,7 @@ meta:
   add_meta_date: false
   # please note that google does not use keywords, but other search engines may.
   keywords: true
-  google_site_verify: false
+  google_site_verify: true
   twitter_card: true
   open_graph: true
   open_graph_locale: true
@@ -360,7 +360,7 @@ cookie_consent:
   groups_switches_and_values:
     # set values true or false or hide
     analytics: true
-    preferences: false
+    preferences: true
     advertising: false
   bar_buttons:
     # button order and options, for deleting buttons set order to zero
