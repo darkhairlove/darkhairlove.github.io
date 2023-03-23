@@ -5,6 +5,6 @@ layout: robot
 ---
 
 User-agent: *
-Disallow:
+Allow: /
 
 Sitemap: https://darkhairlove.github.io/sitemap.xml
