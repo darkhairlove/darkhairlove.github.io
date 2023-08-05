@@ -346,17 +346,17 @@ cookie_consent:
       value: "granted"
       wait_for_update: 500
       # same as domain in _config.yml file
-      cookie_domain: ""
+      cookie_domain: "darkhairlove.github.io"
       no_check_box: true
     analytics:
       group: [analytics_storage]
-      value: "denied"
+      value: "granted"
     preferences:
       group: [functionality_storage, personalization_storage]
-      value: "denied"
+      value: "granted"
     advertising:
       group: [ad_storage]
-      value: "denied"
+      value: "granted"
   groups_switches_and_values:
     # set values true or false or hide
     analytics: true
