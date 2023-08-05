@@ -313,10 +313,10 @@ meta:
 google:
   analytics:
     # disable this feature entirely for development or production env.
-    ignore: production #production #development
+    ignore: development #production #development
   site_verification:
     # disable this feature entirely for development or production env.
-    ignore: production #production #development
+    ignore: development #production #development
 
 ###########################################################
 #                Cookie consent
