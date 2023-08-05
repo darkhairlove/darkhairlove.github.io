@@ -22,21 +22,21 @@ footer:
     - name: Email
       value: suqkr12@gmail.com
       link: mailto:suqkr12@gmail.com
-    # - name: WeChat
-    #   value: YourWeChatUsername
-    #   link: "#"
+    - name: WeChat
+      value: YourWeChatUsername
+      link: "#"
   follow:
-    # - name: Twitter
-    #   link: http://twitter.com/YourTwitterUsername
-    #   username: "@YourTwitterUsername"
-    # - name: Facebook
-    #   link: http://facebook.com/YourFacebookUsername
+    - name: Twitter
+      link: http://twitter.com/YourTwitterUsername
+      username: "@YourTwitterUsername"
+    - name: Facebook
+      link: http://facebook.com/YourFacebookUsername
     - name: LinkedIn
       link: http://linkedin.com/in/sujin-park-data-darkhair
     - name: GitHub
       link: http://github.com/darkhairlove
-    # - name: Dribbble
-      # link: https://dribbble.com/YourDribbbleUsername
+    - name: Dribbble
+      link: https://dribbble.com/YourDribbbleUsername
     - name: RSS
       link: /feed.xml
 
