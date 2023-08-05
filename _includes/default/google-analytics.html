@@ -15,11 +15,10 @@ Licensed under MIT
 {%- endif %}
 
 {%-comment-%} for more info https://developers.google.com/web/ilt/pwa/lab-integrating-analytics?hl=en {%-endcomment-%}
-<!-- <script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.data.owner[lng].google_analytics_id }}"></script> -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMLDH27YFB"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.data.owner[lng].google_analytics_id }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-  gtag('config', 'G-YMLDH27YFB');
+  gtag('config', '{{ site.data.owner[lng].google_analytics_id }}');
 </script>
