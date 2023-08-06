@@ -30,9 +30,9 @@ mathjax:
   combo:  "tex-svg" #(default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
   tags:  "ams" # "none", "ams" (default), "all"
 google_fonts:
-  - name: "Source Sans Pro"
+  - name: "Noto Sans Korean"
     weights: "400,400i,700,700i"
-  - name: "Lora"
+  - name: "Nanum Gothic"
     weights: "400,400i,700,700i"
 google_analytics: "G-YMLDH27YFB" # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
