@@ -78,7 +78,7 @@ this architecture to modeling **sequences of musical notes** and find that it ex
     - Hierarchical Decoder
         
         we found that using a simple RNN as the decoder resulted in poor sampling and reconstruction for long sequences. We believe this is caused by the vanishing influence of the latent state as the output sequence is generated.
-        To mitigate this issue, we propose a novel hierarchical RNN for the decoder. Assume that the input sequence (and target output sequence) $$\Chi$$ can be segmented into $$U$$ nonoverlapping subsequences $$y_u$$ with endpoints $$i_u$$ so that where we define the special case of $$i_{U +1} = T$$
+        To mitigate this issue, we propose a novel hierarchical RNN for the decoder. Assume that the input sequence (and target output sequence) $$\chi$$ can be segmented into $$U$$ nonoverlapping subsequences $$y_u$$ with endpoints $$i_u$$ so that where we define the special case of $$i_{U +1} = T$$
         
         The conductor RNN produces $$U$$ embedding vectors $$c = \{c_1, c_2, . . . , c_U \}$$, one for each subsequence. In our experiments, we use a two-layer unidirectional LSTM for the conductor with a hidden state size of 1024 and 512 output dimensions.
         
@@ -86,7 +86,7 @@ this architecture to modeling **sequences of musical notes** and find that it ex
         
         ![스크린샷 2023-07-04 오후 5.20.47.png](/assets/img/content/mu/7.png)
         
-        전체 입력 시퀀스 $$\Chi$$를 중복하지 않도로 $$U$$개의 하위 시퀀스 $$y_u$$ 로 나눕니다. $$i_{U +1} = T$$로 정의.
+        전체 입력 시퀀스 $$\chi$$를 중복하지 않도로 $$U$$개의 하위 시퀀스 $$y_u$$ 로 나눕니다. $$i_{U +1} = T$$로 정의.
         
         conductor RNN은 $$U$$개의 임베딩 벡터 $$c = \{c_1, c_2, . . . , c_U \}$$를 생성하고, 크기는 1024, 출력 차원은 512로 2개의 층을 가진 단방향 LSTM을 사용한다.
         

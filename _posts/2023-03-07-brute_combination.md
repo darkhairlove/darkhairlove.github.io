@@ -18,7 +18,7 @@ tags: [Python]
 
 정렬로 인해 시간 복잡도 O(NlogN) , 기본 정렬 함수는 시간 복잡도가 O(NlogN)
 
-[코딩테스트 연습 - 숫자의 표현 | 프로그래머스 스쿨 (programmers.co.kr)](https://school.programmers.co.kr/learn/courses/30/lessons/12924)
+[숫자의 표현 프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/12924)
 
 ```python
 # 완전 탐색
