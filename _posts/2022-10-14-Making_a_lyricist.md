@@ -2,7 +2,7 @@
 layout: post
 title:  "[AIFFEL]_작사가만들기"
 date:   2022-10-14 08:43:59
-author: Su Jin
+author: Sujin Park
 categories: AI
 tags: [Python, NLP]
 ---
