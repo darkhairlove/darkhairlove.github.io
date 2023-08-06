@@ -1,9 +1,9 @@
 ---
-title: Recipes
+title: Works
 layout: collection
 permalink: /recipes/
 collection: recipes
 entries_layout: grid
 ---
 
-Sample document listing for the collection `_recipes`.
+프로젝트 내용들입니다.
