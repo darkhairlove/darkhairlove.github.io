@@ -27,11 +27,11 @@ this architecture to modeling **sequences of musical notes** and find that it ex
 
     [참고링크](https://medium.com/@seyong.dev/vae-variational-auto-encoder-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-60032f19b9e3)  
 
-    - 원문 : Following the framework of **Variational Inference**, we do posterior inference by minimizing the KL divergence between our approximate posterior, the encoder, and the true posterior $$p(z|x)$$ by maximizing the evidence lower bound (ELBO)
+  - 원문 : Following the framework of **Variational Inference**, we do posterior inference by minimizing the KL divergence between our approximate posterior, the encoder, and the true posterior $$p(z|x)$$ by maximizing the evidence lower bound (ELBO)
         
     ![스크린샷 2023-07-04 오후 4.31.47.png](/assets/img/content/mu/1.png)
         
-    - 변분추론(**Variational Inference**)이란 ?
+  - 변분추론(**Variational Inference**)이란 ?
     posterior $$p(z|x)$$ 분포를 다루기 쉬운 $$q(z)$$로 근사(approximation)하는 것.
     이때, KL-Divergence 사용한다.
     좌변을 ELBO(evidence lower bound)라고 한다. 좌변의 첫째 항인 기댓값은 decoder의 reconstruction 정확도이고, 두번째 항은 KL-Divergence는 $$p(z)$$로부터 잠재 코드(latent code, z)를 샘플링 하여 realistic data를 생성하는 성능으로 0에 가까우면 높은 성능을 보인다.  
