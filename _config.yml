@@ -18,7 +18,7 @@ remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/default.css"
 locale: en-US
 title: "DATA Analysis - Science - AI"
-description: "WORKS에서 프로젝트를 볼 수 있습니다."
+description: 
 baseurl: # the subpath of your site, e.g. "/blog"
 url: "https://darkhairlove.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: "/images/sunote.png" # path of site logo, e.g. "/images/logo.png"
