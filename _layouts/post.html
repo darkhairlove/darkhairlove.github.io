@@ -30,10 +30,17 @@ layout: default
           {% include social-share.html %}
         {% endif %}
 
+        <script src="https://utteranc.es/client.js"
+                repo="darkhairlove/darkhairlove.github.io"
+                issue-term="pathname"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
         {% if site.disqus.shortname %}
           {% include disqus-comments.html %}
         {% endif %}
-
+        
         {% include page-pagination.html %}
       </div>
     </div>
