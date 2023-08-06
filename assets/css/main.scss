@@ -6,13 +6,9 @@
 
 @import "so-simple";
 
-$serif-font-family: "Hahmlet", serif;
-$sans-serif-font-family: "Noto Sans KR", sans-serif;
-$monospace-font-family: Menlo, Consolas, Monaco, "Courier New", Courier,
-    monospace;
-
-$base-font-family: $sans-serif-font-family;
-$headline-font-family: $sans-serif-font-family;
-$title-font-family: $serif-font-family;
-$description-font-family: $serif-font-family;
-$meta-font-family: $serif-font-family;
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: local('Cafe24Oneprettynight'), url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
