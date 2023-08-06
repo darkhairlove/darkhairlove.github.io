@@ -2,7 +2,6 @@
 layout: post
 title: "[완전탐색]-브루트 포스 순열 조합"
 date: 2023-03-07 08:43:59
-author: Sujin Park
 categories: coding
 tags: [Python]
 ---
