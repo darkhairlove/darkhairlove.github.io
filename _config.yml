@@ -32,8 +32,6 @@ mathjax:
 google_fonts:
   - name: "Hahmlet"
     weights: "700"
-  - name: "Noto Sans KR"
-    weights: "700"
 google_analytics: "G-YMLDH27YFB" # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
   shortname: "https-darkhairlove-github-io" # Disqus shortname, e.g. "my_disqus_shortname"
