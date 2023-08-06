@@ -1,7 +1,7 @@
 ---
 title: "[AIFFEL X SOCAR] 생성형 챗봇"
 image: 
-  path: /assets/img/content/pro1/1202.jpg
+  path: /assets/img/content/pro1/1.jpg
   thumbnail: /assets/img/content/pro1/1.jpg
 ---
 
