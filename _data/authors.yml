@@ -1,16 +1,14 @@
 # Sample Authors
 # Remove file or replace with your own
 
-Billy Rick:
-  name: Billy Rick
-  picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
+Sujin Park:
+  name: Sujin Park
+  picture: /images/about.jpg
+  # twitter: "@billyrick"
   links:
-    - title: Twitter
-      url: https://twitter.com/billyrick
-      icon: fab fa-twitter-square
-
-Cornelius Fiddlebone:
-  name: Cornelius Fiddlebone
-  picture: /images/bio-photo.jpg
-  twitter: corneliusfiddlebone
+    - title: Email
+      url: "mailto:suqkr12@gmail.com"
+      icon: fa-solid fa-envelope
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/sujin-park-data-darkhair
+      icon: fa-brands fa-linkedin
