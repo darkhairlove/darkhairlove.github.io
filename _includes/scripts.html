@@ -26,7 +26,10 @@ endcapture %}
   // http://docs.mathjax.org/en/latest/upgrading/v2.html
   MathJax = {
     tex: {
-      tags: "{{ site.mathjax.tags | default: 'ams' }}"    // eq numbering options: none, ams, all
+      tags: "{{ site.mathjax.tags | default: 'ams' }}", packages: ["base", "ams"]   // eq numbering options: none, ams, all
+    },
+    loader: {
+      load: ["ui/menu", "[tex]/ams"]
     },
     options: {
       renderActions: {
