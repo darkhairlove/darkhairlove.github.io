@@ -17,8 +17,7 @@ this architecture to modeling **sequences of musical notes** and find that it ex
 - latent code를 활용해 ‘posterior collapse’문제를 피할 수 있었다.
 - 음표의 시퀀스 모델링에 적용하고 "flat" baseline 모델보다 더 나은 sampling, interpolation, reconstruction performance을 보여준다.
 - 이 논문이 나아가는 방향은 음표의 시퀀스 모델링에 초점을 맞춰져 있다. 그 이유는 대중 음악이 섹션 사이의 반복과 다양성과 같이 strong long-term 구조를 보여주기 때문이고, 이 구조는 hierarchical-songs으로 measures, beats 등으로 나뉘기 때문이다.
-- background
-    
+- background  
     근본적인 모델은 autoencoder로, 이 논문에서는 추가적으로  perform latent-space interpolations 와 attribute vector arithmetic을 원하여 **VAE**를 사용했다. 
     
     - VAE 이란 ?
