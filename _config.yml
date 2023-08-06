@@ -119,11 +119,11 @@ footer_links:
     url: https://github.com/darkhairlove
     icon: fab fa-github-square
   - title: Email
-      url: suqkr12@gmail.com
-      icon: fa-solid fa-envelope
+    url: suqkr12@gmail.com
+    icon: fa-solid fa-envelope
   - title: LinkedIn
-      url: https://www.linkedin.com/in/sujin-park-data-darkhair
-      icon: fa-brands fa-linkedin
+    url: https://www.linkedin.com/in/sujin-park-data-darkhair
+    icon: fa-brands fa-linkedin
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
