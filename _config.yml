@@ -40,7 +40,6 @@ disqus:
 twitter:
   username: # site's Twitter username, e.g. "mmistakes"
 # google_site_verification: ''
-naver_site_verification  : "0609ca04d1d24c3cb54bf5524acd0bcd7038c022"
 
 # Liquid
 liquid:
