@@ -22,6 +22,7 @@ description: "It really is the best."
 baseurl: # the subpath of your site, e.g. "/blog"
 url: "https://darkhairlove.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: "/images/sulog.png" # path of site logo, e.g. "/images/logo.png"
+repository: darkhairlove/darkhairlove.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 date_format: "%B %-d, %Y"
 read_time: true # reading time estimates, e.g. true
 words_per_minute: # 200
@@ -33,8 +34,12 @@ google_fonts:
   - name: "Hahmlet"
     weights: "700"
 google_analytics: "G-YMLDH27YFB" # Google Analytics id, e.g. "UA-NNNNNNNN-N"
-disqus:
-  shortname: "https-darkhairlove-github-io" # Disqus shortname, e.g. "my_disqus_shortname"
+comments:
+  provider: "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  utterances:
+    theme: "github-light" # "github-light" (default), "github-dark"
+    issue_term: "pathname" # "pathname" (default)
+
 twitter:
   username: # site's Twitter username, e.g. "mmistakes"
 # google_site_verification: ''
