@@ -24,16 +24,19 @@ this architecture to modeling **sequences of musical notes** and find that it ex
     - VAE 이란 ?
     학습 데이터를 병목(Bottleneck)구조를 통해 저차원의 잠재코드(latent code, z)를 만드는 것. 잠재 공간(latent space)을 통해서 모델은 입력 데이터 간의 유사성과 차이를 학습한다.
     VAE는 입력 데이터를 평균, 표준편차 벡터로 인코딩 한 후, 두 벡터에 대응하는 분포에서 샘플링을 수행. 그 후 KL-divergence을 손실함수로 사용해 해당 분포가 표준 정규 분포에 가까워지도록 학습한다.
-    결국, 샘플링된 VAE의 잠재 공간 분포는 원점을 기준으로 데이터가 대칭적이고, 분포가 고른 형태를 보인다.
-    [참고링크](https://medium.com/@seyong.dev/vae-variational-auto-encoder-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-60032f19b9e3)
+    결국, 샘플링된 VAE의 잠재 공간 분포는 원점을 기준으로 데이터가 대칭적이고, 분포가 고른 형태를 보인다.  
+
+    [참고링크](https://medium.com/@seyong.dev/vae-variational-auto-encoder-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-60032f19b9e3)  
+
     - 원문 : Following the framework of **Variational Inference**, we do posterior inference by minimizing the KL divergence between our approximate posterior, the encoder, and the true posterior $$p(z|x)$$ by maximizing the evidence lower bound (ELBO)
         
-        ![스크린샷 2023-07-04 오후 4.31.47.png](/assets/img/content/mu/1.png)
+    ![스크린샷 2023-07-04 오후 4.31.47.png](/assets/img/content/mu/1.png)
         
     - 변분추론(**Variational Inference**)이란 ?
     posterior $$p(z|x)$$ 분포를 다루기 쉬운 $$q(z)$$로 근사(approximation)하는 것.
     이때, KL-Divergence 사용한다.
-    좌변을 ELBO(evidence lower bound)라고 한다. 좌변의 첫째 항인 기댓값은 decoder의 reconstruction 정확도이고, 두번째 항은 KL-Divergence는 $$p(z)$$로부터 잠재 코드(latent code, z)를 샘플링 하여 realistic data를 생성하는 성능으로 0에 가까우면 높은 성능을 보인다.
+    좌변을 ELBO(evidence lower bound)라고 한다. 좌변의 첫째 항인 기댓값은 decoder의 reconstruction 정확도이고, 두번째 항은 KL-Divergence는 $$p(z)$$로부터 잠재 코드(latent code, z)를 샘플링 하여 realistic data를 생성하는 성능으로 0에 가까우면 높은 성능을 보인다.  
+
     [참고링크](https://ratsgo.github.io/generative%20model/2017/12/19/vi/)
     - $$\beta$$-VAE 와 Free BITS 란 ?
     KL-Divergence 가중치 하이퍼 파라미터 Beta를 사용하는 것.
