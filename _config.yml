@@ -95,7 +95,8 @@ defaults:
       layout: post
       comments: true
       share: true
-   - scope:
+
+  - scope:
       path: "_recipes"
       type: recipes
     values:
