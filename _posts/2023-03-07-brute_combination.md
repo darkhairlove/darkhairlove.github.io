@@ -41,7 +41,7 @@ def solution(n):
 
 ### 순열 permutation
 
-- n개의 수 중에서 r개를 뽑아 줄을 세우는 총 방법의 수 : $_nP_k = {n!\over (n-r)!}$
+- n개의 수 중에서 r개를 뽑아 줄을 세우는 총 방법의 수 : $$_nP_k = {n!\over (n-r)!}$$
 - C++ : next_permutation이라는 STL 사용. do-while 문을 사용.
 - Python : itertools의 permutations를 import 후 사용.
 
@@ -54,7 +54,7 @@ for i in permutations(arr, 4):
 
 ### 조합 combination
 
-- n개의 수 중에서 r개를 뽑는 가지 수 : $_nC_r = {n! \over (n-r)!r!}$
+- n개의 수 중에서 r개를 뽑는 가지 수 : $$_nC_r = {n! \over (n-r)!r!}$$
 - C++ :  STL은 없으므로 next_permutation을 이용하거나 재귀함수로 구현.
 - Python : itertools의 combination을 import 후 사용.
 

@@ -26,23 +26,23 @@ this architecture to modeling **sequences of musical notes** and find that it ex
     VAE는 입력 데이터를 평균, 표준편차 벡터로 인코딩 한 후, 두 벡터에 대응하는 분포에서 샘플링을 수행. 그 후 KL-divergence을 손실함수로 사용해 해당 분포가 표준 정규 분포에 가까워지도록 학습한다.
     결국, 샘플링된 VAE의 잠재 공간 분포는 원점을 기준으로 데이터가 대칭적이고, 분포가 고른 형태를 보인다.
     [참고링크](https://medium.com/@seyong.dev/vae-variational-auto-encoder-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-60032f19b9e3)
-    - 원문 : Following the framework of **Variational Inference**, we do posterior inference by minimizing the KL divergence between our approximate posterior, the encoder, and the true posterior $p(z|x)$ by maximizing the evidence lower bound (ELBO)
+    - 원문 : Following the framework of **Variational Inference**, we do posterior inference by minimizing the KL divergence between our approximate posterior, the encoder, and the true posterior $$p(z|x)$$ by maximizing the evidence lower bound (ELBO)
         
         ![스크린샷 2023-07-04 오후 4.31.47.png](/assets/img/content/mu/1.png)
         
     - 변분추론(**Variational Inference**)이란 ?
-    posterior $p(z|x)$ 분포를 다루기 쉬운 $q(z)$로 근사(approximation)하는 것.
+    posterior $$p(z|x)$$ 분포를 다루기 쉬운 $$q(z)$$로 근사(approximation)하는 것.
     이때, KL-Divergence 사용한다.
-    좌변을 ELBO(evidence lower bound)라고 한다. 좌변의 첫째 항인 기댓값은 decoder의 reconstruction 정확도이고, 두번째 항은 KL-Divergence는 $p(z)$로부터 잠재 코드(latent code, z)를 샘플링 하여 realistic data를 생성하는 성능으로 0에 가까우면 높은 성능을 보인다.
+    좌변을 ELBO(evidence lower bound)라고 한다. 좌변의 첫째 항인 기댓값은 decoder의 reconstruction 정확도이고, 두번째 항은 KL-Divergence는 $$p(z)$$로부터 잠재 코드(latent code, z)를 샘플링 하여 realistic data를 생성하는 성능으로 0에 가까우면 높은 성능을 보인다.
     [참고링크](https://ratsgo.github.io/generative%20model/2017/12/19/vi/)
-    - $\beta$-VAE 와 Free BITS 란 ?
+    - $$\beta$$-VAE 와 Free BITS 란 ?
     KL-Divergence 가중치 하이퍼 파라미터 Beta를 사용하는 것.
         
         ![스크린샷 2023-07-04 오후 4.37.55.png](/assets/img/content/mu/2.png)
         
-        $\beta <1$으로 했을 때, the model to prioritize reconstruction quality over learning a compact representation. 품질을 높여준다. 반대로 샘플링을 통한 잠재 코드의 품질을 높인다.
+        $$\beta <1$$으로 했을 때, the model to prioritize reconstruction quality over learning a compact representation. 품질을 높여준다. 반대로 샘플링을 통한 잠재 코드의 품질을 높인다.
         
-        KL-Divergence에 하한선(free-bits)($\tau$)를 정하는 것. freedom을 얻고 reconstruction quality를 높인다.
+        KL-Divergence에 하한선(free-bits)($$\tau$$)를 정하는 것. freedom을 얻고 reconstruction quality를 높인다.
         
         ![스크린샷 2023-07-04 오후 4.38.50.png](/assets/img/content/mu/3.png)
         
@@ -66,31 +66,31 @@ this architecture to modeling **sequences of musical notes** and find that it ex
     
     - Bidirectional Encoder
         
-        원문 : For the encoder $q_\lambda(z|x)$, we use a two-layer bidirectional LSTM network.
-        We process an input sequence $x = \{x_1,x_2,...,x_T\}$ to obtain the final state vectors $\overrightarrow h_T, \overleftarrow h_T$ from the second bidirectional LSTM layer. These are then concatenated to produce $h_T$ and fed into two fully connected layers to produce the latent distribution parameters  $\mu$ and $\sigma$ : where $W_{h\sigma}$  ,  $W_{h\mu}$  and $b_{\mu}$ ,  $b_{\sigma}$  are weight matrices and bias vectors, respectively.
+        원문 : For the encoder $$q_\lambda(z|x)$$, we use a two-layer bidirectional LSTM network.
+        We process an input sequence $$x = \{x_1,x_2,...,x_T\}$$ to obtain the final state vectors $$\overrightarrow h_T, \overleftarrow h_T$$ from the second bidirectional LSTM layer. These are then concatenated to produce $$h_T$$ and fed into two fully connected layers to produce the latent distribution parameters  $$\mu$$ and $$\sigma$$ : where $$W_{h\sigma}$$  ,  $$W_{h\mu}$$  and $$b_{\mu}$$ ,  $$b_{\sigma}$$  are weight matrices and bias vectors, respectively.
         we use an LSTM state size of 2048 for all layers and 512 latent dimensions.
         
         ![스크린샷 2023-07-04 오후 5.11.14.png](/assets/img/content/mu/6.png)
         
-        인코더 $q_\lambda(z|x)$에 2개 층의 양방향 LSTM 층 사용하고, 2번째 양방향 LSTM층에서 최종 상태 $\overrightarrow h_T, \overleftarrow h_T$ 을 얻고, 두 벡터를 concatenation하여 $h_T$를 만들어 2개의 fully connected layers를 통과시켜 잠재 분포 파라미터인 $\mu$ 와 $\sigma$ 를 생성한다.
+        인코더 $$q_\lambda(z|x)$$에 2개 층의 양방향 LSTM 층 사용하고, 2번째 양방향 LSTM층에서 최종 상태 $$\overrightarrow h_T, \overleftarrow h_T$$ 을 얻고, 두 벡터를 concatenation하여 $$h_T$$를 만들어 2개의 fully connected layers를 통과시켜 잠재 분포 파라미터인 $$\mu$$ 와 $$\sigma$$ 를 생성한다.
         이 모델의 state 사이즈는 2048이고 잠재 차원을 512로 두었다.
         
     - Hierarchical Decoder
         
         we found that using a simple RNN as the decoder resulted in poor sampling and reconstruction for long sequences. We believe this is caused by the vanishing influence of the latent state as the output sequence is generated.
-        To mitigate this issue, we propose a novel hierarchical RNN for the decoder. Assume that the input sequence (and target output sequence) $\Chi$ can be segmented into $U$ nonoverlapping subsequences $y_u$ with endpoints $i_u$ so that where we define the special case of $i_{U +1} = T$
+        To mitigate this issue, we propose a novel hierarchical RNN for the decoder. Assume that the input sequence (and target output sequence) $$\Chi$$ can be segmented into $$U$$ nonoverlapping subsequences $$y_u$$ with endpoints $$i_u$$ so that where we define the special case of $$i_{U +1} = T$$
         
-        The conductor RNN produces $U$ embedding vectors $c = \{c_1, c_2, . . . , c_U \}$, one for each subsequence. In our experiments, we use a two-layer unidirectional LSTM for the conductor with a hidden state size of 1024 and 512 output dimensions.
+        The conductor RNN produces $$U$$ embedding vectors $$c = \{c_1, c_2, . . . , c_U \}$$, one for each subsequence. In our experiments, we use a two-layer unidirectional LSTM for the conductor with a hidden state size of 1024 and 512 output dimensions.
         
-        Once the conductor has produced the sequence of embedding vectors c, each one is individually passed through a shared fully-connected layer followed by a tanh activation to produce initial states for a final bottom-layer decoder RNN. The decoder RNN then autoregressively produces a sequence of distributions over output tokens for each subsequence $y_u$ via a softmax output layer. At each step of the bottom-level decoder, the current conductor embedding $c_u$  is concatenated with the previous output token to be used as the input.
+        Once the conductor has produced the sequence of embedding vectors c, each one is individually passed through a shared fully-connected layer followed by a tanh activation to produce initial states for a final bottom-layer decoder RNN. The decoder RNN then autoregressively produces a sequence of distributions over output tokens for each subsequence $$y_u$$ via a softmax output layer. At each step of the bottom-level decoder, the current conductor embedding $$c_u$$  is concatenated with the previous output token to be used as the input.
         
         ![스크린샷 2023-07-04 오후 5.20.47.png](/assets/img/content/mu/7.png)
         
-        전체 입력 시퀀스 $\Chi$를 중복하지 않도로 $U$개의 하위 시퀀스 $y_u$ 로 나눕니다. $i_{U +1} = T$로 정의.
+        전체 입력 시퀀스 $$\Chi$$를 중복하지 않도로 $$U$$개의 하위 시퀀스 $$y_u$$ 로 나눕니다. $$i_{U +1} = T$$로 정의.
         
-        conductor RNN은 $U$개의 임베딩 벡터 $c = \{c_1, c_2, . . . , c_U \}$를 생성하고, 크기는 1024, 출력 차원은 512로 2개의 층을 가진 단방향 LSTM을 사용한다.
+        conductor RNN은 $$U$$개의 임베딩 벡터 $$c = \{c_1, c_2, . . . , c_U \}$$를 생성하고, 크기는 1024, 출력 차원은 512로 2개의 층을 가진 단방향 LSTM을 사용한다.
         
-        임베딩 벡터 $c$를 생성하면 각 벡터는 $tanh$ 활성함수가 있는 fully-connected layer를 통과하여 디코더의 bottom-layer의 초기 상태를 생성한다. 그리고 softmax 출력층을 통해 자기회귀적으로 각 subsequence $y_u$에 해당하는 분포를 생성한다. 각 bottom-level 디코더에서 현재 conductor 임베딩 $c_u$는 이전 출력 토큰과 concatenated 되어 입력에 사용된다.
+        임베딩 벡터 $$c$$를 생성하면 각 벡터는 $$tanh$$ 활성함수가 있는 fully-connected layer를 통과하여 디코더의 bottom-layer의 초기 상태를 생성한다. 그리고 softmax 출력층을 통해 자기회귀적으로 각 subsequence $$y_u$$에 해당하는 분포를 생성한다. 각 bottom-level 디코더에서 현재 conductor 임베딩 $$c_u$$는 이전 출력 토큰과 concatenated 되어 입력에 사용된다.
         
 2. 마무리
     - long-term구조에서 hierarchical decoder를 사용하는 recurrent VAE인 musicVAE를 제안한다.
