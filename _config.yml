@@ -23,7 +23,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 url: "https://darkhairlove.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: "/images/sulog.png" # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
-read_time: # reading time estimates, e.g. true
+read_time: true # reading time estimates, e.g. true
 words_per_minute: # 200
 mathjax:
   enable: true # MathJax equations, e.g. true, false (default)
@@ -79,6 +79,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-redirect-from
+
 
 collections:
   recipes:
@@ -118,10 +120,10 @@ author:
       icon: fab fa-github-square
     - title: Email
       url: suqkr12@gmail.com
-      icon: fa-solid fa-envelope
+      icon: far fa-envelope
     - title: LinkedIn
       url: https://www.linkedin.com/in/sujin-park-data-darkhair
-      icon: fa-brands fa-linkedin
+      icon: fab fa-linkedin
 
 # Footer Links
 footer_links:
@@ -133,10 +135,10 @@ footer_links:
     icon: fab fa-github-square
   - title: Email
     url: suqkr12@gmail.com
-    icon: fa-solid fa-envelope
+    icon: far fa-envelope
   - title: LinkedIn
     url: https://www.linkedin.com/in/sujin-park-data-darkhair
-    icon: fa-brands fa-linkedin
+    icon: fab fa-linkedin
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
