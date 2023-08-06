@@ -8,7 +8,7 @@ tags: [Review]
 
 ## 논문 : [A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music](https://arxiv.org/abs/1803.05428)
 
-1. 요약
+### 요약
 - 원문 : existing recurrent VAE models have difficulty modeling sequences with long-term structure. To address this issue, we propose the use of a **hierarchical decoder**, which first outputs embeddings for subsequences of the input and then uses these embeddings to generate each subsequence independently. 
 This structure encourages the model to utilize its **latent code**, thereby avoiding the “posterior collapse” problem.
 this architecture to modeling **sequences of musical notes** and find that it exhibits dramatically better sampling, interpolation, and reconstruction performance than a “flat” baseline model.
@@ -95,5 +95,5 @@ this architecture to modeling **sequences of musical notes** and find that it ex
         
         임베딩 벡터 $$c$$를 생성하면 각 벡터는 $$tanh$$ 활성함수가 있는 fully-connected layer를 통과하여 디코더의 bottom-layer의 초기 상태를 생성한다. 그리고 softmax 출력층을 통해 자기회귀적으로 각 subsequence $$y_u$$에 해당하는 분포를 생성한다. 각 bottom-level 디코더에서 현재 conductor 임베딩 $$c_u$$는 이전 출력 토큰과 concatenated 되어 입력에 사용된다.
         
-2. 마무리
-    - long-term구조에서 hierarchical decoder를 사용하는 recurrent VAE인 musicVAE를 제안한다.
+### 마무리
+  - long-term구조에서 hierarchical decoder를 사용하는 recurrent VAE인 musicVAE를 제안한다.
